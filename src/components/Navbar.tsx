@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,20 +17,14 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Work', href: '#portfolio' },
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Work', href: '/portfolio' },
+    { name: 'Services', href: '/services' },
+    { name: 'About', href: '/about' },
+    { name: 'Clients', href: '/clients' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'Contact', href: '/contact' },
   ];
-
-  const scrollToSection = (href: string) => {
-    if (!isHomePage) return;
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMobileMenuOpen(false);
-  };
 
   return (
     <>
@@ -53,15 +46,18 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
-              <button
+              <Link
                 key={link.name}
-                onClick={() => scrollToSection(link.href)}
-                className="text-sm font-medium text-white/80 hover:text-orange transition-colors duration-300"
+                to={link.href}
+                className={`text-sm font-medium transition-colors duration-300 ${location.pathname === link.href
+                  ? 'text-orange'
+                  : 'text-white/80 hover:text-orange'
+                  }`}
               >
                 {link.name}
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -101,15 +97,19 @@ const Navbar = () => {
         className={`fixed inset-0 z-40 bg-navy-900/98 backdrop-blur-lg transition-all duration-500 lg:hidden ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
           }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="flex flex-col items-center justify-center h-full gap-6">
           {navLinks.map((link) => (
-            <button
+            <Link
               key={link.name}
-              onClick={() => scrollToSection(link.href)}
-              className="text-2xl font-heading font-semibold text-white hover:text-orange transition-colors"
+              to={link.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`text-2xl font-heading font-semibold transition-colors ${location.pathname === link.href
+                ? 'text-orange'
+                : 'text-white hover:text-orange'
+                }`}
             >
               {link.name}
-            </button>
+            </Link>
           ))}
           <Link to="/signup" onClick={() => setIsMobileMenuOpen(false)}>
             <Button className="mt-4 bg-orange hover:bg-orange-dark text-white px-8 py-6 text-lg">

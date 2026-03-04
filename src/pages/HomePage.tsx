@@ -12,6 +12,8 @@ import ClientsSection from '../sections/ClientsSection';
 import CTASection from '../sections/CTASection';
 import ContactSection from '../sections/ContactSection';
 import Footer from '../sections/Footer';
+import StatsBanner from '../sections/StatsBanner';
+import ClientLogoSlider from '../sections/ClientLogoSlider';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +24,7 @@ const HomePage = () => {
       const pinned = ScrollTrigger.getAll()
         .filter(st => st.vars.pin)
         .sort((a, b) => a.start - b.start);
-      
+
       const maxScroll = ScrollTrigger.maxScroll(window);
       if (!maxScroll || pinned.length === 0) return;
 
@@ -63,36 +65,40 @@ const HomePage = () => {
   return (
     <div className="relative bg-navy-900">
       <Navbar />
-      
+
       <main className="relative">
         {/* Section 1: Hero - pin: true */}
         <HeroSection />
-        
+
+        {/* Section 1.5: Logo Slider & Stats */}
+        <ClientLogoSlider />
+        <StatsBanner />
+
         {/* Section 2: About - pin: false (flowing) */}
         <AboutSection />
-        
+
         {/* Section 3: Services - pin: false (flowing) */}
         <ServicesSection />
-        
+
         {/* Section 4: Portfolio - pin: false (flowing) */}
         <PortfolioSection />
-        
+
         {/* Section 5: Why Choose Us - pin: false (flowing) */}
         <WhyChooseUsSection />
-        
+
         {/* Section 6: Testimonials - pin: false (flowing) */}
         <TestimonialsSection />
-        
+
         {/* Section 7: Clients - pin: false (flowing) */}
         <ClientsSection />
-        
+
         {/* Section 8: CTA - pin: false (flowing) */}
         <CTASection />
-        
+
         {/* Section 9: Contact - pin: false (flowing) */}
         <ContactSection />
       </main>
-      
+
       <Footer />
     </div>
   );

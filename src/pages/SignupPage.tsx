@@ -15,7 +15,7 @@ const SignupPage = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
-  
+
   const [formData, setFormData] = useState({
     fullName: '',
     companyName: '',
@@ -26,7 +26,7 @@ const SignupPage = () => {
     eventType: '',
     agreeTerms: false
   });
-  
+
   const formRef = useRef<HTMLFormElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
 
@@ -109,18 +109,18 @@ const SignupPage = () => {
   return (
     <div className="min-h-screen bg-navy-900 flex">
       {/* Left Side - Image */}
-      <div 
+      <div
         ref={imageRef}
         className="hidden lg:block w-1/2 relative overflow-hidden"
       >
         <img
-          src="/images/stage_backlight_silhouette.jpg"
+          src="/images/indian_boardroom_meeting.png"
           alt="Corporate Event"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 via-navy-900/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent" />
-        
+
         {/* Content overlay */}
         <div className="absolute bottom-12 left-12 right-12">
           <div className="text-white">
@@ -158,8 +158,8 @@ const SignupPage = () => {
           </Link>
 
           {/* Back button */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-white/60 hover:text-orange transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -180,9 +180,8 @@ const SignupPage = () => {
             <div className="form-element space-y-2">
               <Label htmlFor="fullName" className="text-white/70 text-sm">Full Name *</Label>
               <div className="relative">
-                <User className={`absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${
-                  focusedField === 'fullName' ? 'text-orange' : 'text-white/40'
-                }`} />
+                <User className={`absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${focusedField === 'fullName' ? 'text-orange' : 'text-white/40'
+                  }`} />
                 <Input
                   id="fullName"
                   name="fullName"
@@ -193,11 +192,10 @@ const SignupPage = () => {
                   onFocus={() => setFocusedField('fullName')}
                   onBlur={() => setFocusedField(null)}
                   className={`pl-10 bg-navy-800 border text-white placeholder:text-white/30 
-                           focus:ring-2 transition-all duration-300 h-11 ${
-                             focusedField === 'fullName' 
-                               ? 'border-orange ring-orange/20' 
-                               : 'border-white/10'
-                           }`}
+                           focus:ring-2 transition-all duration-300 h-11 ${focusedField === 'fullName'
+                      ? 'border-orange ring-orange/20'
+                      : 'border-white/10'
+                    }`}
                   required
                 />
               </div>
@@ -207,9 +205,8 @@ const SignupPage = () => {
             <div className="form-element space-y-2">
               <Label htmlFor="companyName" className="text-white/70 text-sm">Company Name *</Label>
               <div className="relative">
-                <Building className={`absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${
-                  focusedField === 'companyName' ? 'text-orange' : 'text-white/40'
-                }`} />
+                <Building className={`absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${focusedField === 'companyName' ? 'text-orange' : 'text-white/40'
+                  }`} />
                 <Input
                   id="companyName"
                   name="companyName"
@@ -220,11 +217,10 @@ const SignupPage = () => {
                   onFocus={() => setFocusedField('companyName')}
                   onBlur={() => setFocusedField(null)}
                   className={`pl-10 bg-navy-800 border text-white placeholder:text-white/30 
-                           focus:ring-2 transition-all duration-300 h-11 ${
-                             focusedField === 'companyName' 
-                               ? 'border-orange ring-orange/20' 
-                               : 'border-white/10'
-                           }`}
+                           focus:ring-2 transition-all duration-300 h-11 ${focusedField === 'companyName'
+                      ? 'border-orange ring-orange/20'
+                      : 'border-white/10'
+                    }`}
                   required
                 />
               </div>
@@ -235,9 +231,8 @@ const SignupPage = () => {
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-white/70 text-sm">Email *</Label>
                 <div className="relative">
-                  <Mail className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${
-                    focusedField === 'email' ? 'text-orange' : 'text-white/40'
-                  }`} />
+                  <Mail className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${focusedField === 'email' ? 'text-orange' : 'text-white/40'
+                    }`} />
                   <Input
                     id="email"
                     name="email"
@@ -248,11 +243,10 @@ const SignupPage = () => {
                     onFocus={() => setFocusedField('email')}
                     onBlur={() => setFocusedField(null)}
                     className={`pl-9 bg-navy-800 border text-white placeholder:text-white/30 
-                             focus:ring-2 transition-all duration-300 h-11 text-sm ${
-                               focusedField === 'email' 
-                                 ? 'border-orange ring-orange/20' 
-                                 : 'border-white/10'
-                             }`}
+                             focus:ring-2 transition-all duration-300 h-11 text-sm ${focusedField === 'email'
+                        ? 'border-orange ring-orange/20'
+                        : 'border-white/10'
+                      }`}
                     required
                   />
                 </div>
@@ -260,9 +254,8 @@ const SignupPage = () => {
               <div className="space-y-2">
                 <Label htmlFor="phone" className="text-white/70 text-sm">Phone *</Label>
                 <div className="relative">
-                  <Phone className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${
-                    focusedField === 'phone' ? 'text-orange' : 'text-white/40'
-                  }`} />
+                  <Phone className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${focusedField === 'phone' ? 'text-orange' : 'text-white/40'
+                    }`} />
                   <Input
                     id="phone"
                     name="phone"
@@ -273,11 +266,10 @@ const SignupPage = () => {
                     onFocus={() => setFocusedField('phone')}
                     onBlur={() => setFocusedField(null)}
                     className={`pl-9 bg-navy-800 border text-white placeholder:text-white/30 
-                             focus:ring-2 transition-all duration-300 h-11 text-sm ${
-                               focusedField === 'phone' 
-                                 ? 'border-orange ring-orange/20' 
-                                 : 'border-white/10'
-                             }`}
+                             focus:ring-2 transition-all duration-300 h-11 text-sm ${focusedField === 'phone'
+                        ? 'border-orange ring-orange/20'
+                        : 'border-white/10'
+                      }`}
                     required
                   />
                 </div>
@@ -289,9 +281,8 @@ const SignupPage = () => {
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-white/70 text-sm">Password *</Label>
                 <div className="relative">
-                  <Lock className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${
-                    focusedField === 'password' ? 'text-orange' : 'text-white/40'
-                  }`} />
+                  <Lock className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${focusedField === 'password' ? 'text-orange' : 'text-white/40'
+                    }`} />
                   <Input
                     id="password"
                     name="password"
@@ -302,11 +293,10 @@ const SignupPage = () => {
                     onFocus={() => setFocusedField('password')}
                     onBlur={() => setFocusedField(null)}
                     className={`pl-9 pr-9 bg-navy-800 border text-white placeholder:text-white/30 
-                             focus:ring-2 transition-all duration-300 h-11 text-sm ${
-                               focusedField === 'password' 
-                                 ? 'border-orange ring-orange/20' 
-                                 : 'border-white/10'
-                             }`}
+                             focus:ring-2 transition-all duration-300 h-11 text-sm ${focusedField === 'password'
+                        ? 'border-orange ring-orange/20'
+                        : 'border-white/10'
+                      }`}
                     required
                   />
                   <button
@@ -321,9 +311,8 @@ const SignupPage = () => {
               <div className="space-y-2">
                 <Label htmlFor="confirmPassword" className="text-white/70 text-sm">Confirm Password *</Label>
                 <div className="relative">
-                  <Lock className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${
-                    focusedField === 'confirmPassword' ? 'text-orange' : 'text-white/40'
-                  }`} />
+                  <Lock className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors ${focusedField === 'confirmPassword' ? 'text-orange' : 'text-white/40'
+                    }`} />
                   <Input
                     id="confirmPassword"
                     name="confirmPassword"
@@ -334,11 +323,10 @@ const SignupPage = () => {
                     onFocus={() => setFocusedField('confirmPassword')}
                     onBlur={() => setFocusedField(null)}
                     className={`pl-9 pr-9 bg-navy-800 border text-white placeholder:text-white/30 
-                             focus:ring-2 transition-all duration-300 h-11 text-sm ${
-                               focusedField === 'confirmPassword' 
-                                 ? 'border-orange ring-orange/20' 
-                                 : 'border-white/10'
-                             }`}
+                             focus:ring-2 transition-all duration-300 h-11 text-sm ${focusedField === 'confirmPassword'
+                        ? 'border-orange ring-orange/20'
+                        : 'border-white/10'
+                      }`}
                     required
                   />
                   <button
