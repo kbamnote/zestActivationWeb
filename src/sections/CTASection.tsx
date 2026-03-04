@@ -51,9 +51,9 @@ const CTASection = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-navy-900/80" />
-        
+
         {/* Orange spotlight */}
-        <div 
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background: 'radial-gradient(circle at 50% 50%, rgba(255,106,0,0.15) 0%, rgba(255,106,0,0) 50%)'
@@ -63,21 +63,21 @@ const CTASection = () => {
 
       {/* Content */}
       <div className="relative w-full px-6 lg:px-[8vw]">
-        <div 
+        <div
           ref={contentRef}
           className="max-w-4xl mx-auto text-center"
         >
           <span className="font-accent text-sm tracking-[0.18em] text-orange uppercase mb-6 block">
             Let's Create Together
           </span>
-          
+
           <h2 className="font-heading font-bold text-white text-3xl lg:text-5xl xl:text-6xl mb-6 leading-tight">
             Ready to Plan Your Next{' '}
             <span className="text-gradient">Corporate Event?</span>
           </h2>
-          
+
           <p className="text-white/70 text-base lg:text-lg max-w-2xl mx-auto mb-10">
-            From concept to execution, we'll bring your vision to life with creativity, 
+            From concept to execution, we'll bring your vision to life with creativity,
             precision, and passion. Let's create an experience that inspires.
           </p>
 
@@ -92,7 +92,7 @@ const CTASection = () => {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <a href="mailto:hello@zestactivation.in">
+            <a href="mailto:info@zestacctivation.in">
               <Button
                 size="lg"
                 variant="outline"

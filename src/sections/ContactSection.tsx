@@ -68,19 +68,19 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: 'Email',
-      value: 'hello@zestactivation.in',
-      href: 'mailto:hello@zestactivation.in'
+      value: 'info@zestacctivation.in',
+      href: 'mailto:info@zestacctivation.in'
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: 'Phone',
-      value: '+91 98765 43210',
-      href: 'tel:+919876543210'
+      value: '+91 78419 63153 / 87883 67629',
+      href: 'tel:+917841963153'
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: 'Locations',
-      value: 'Mumbai • Delhi • Bangalore • Hyderabad',
+      value: 'Nagpur, Maharashtra, India',
       href: '#'
     },
     {
@@ -109,7 +109,7 @@ const ContactSection = () => {
                 Start a Project
               </h2>
               <p className="text-white/60 text-base lg:text-lg">
-                Tell us what you're building. We'll reply within one business day 
+                Tell us what you're building. We'll reply within one business day
                 with a customized proposal tailored to your needs.
               </p>
             </div>

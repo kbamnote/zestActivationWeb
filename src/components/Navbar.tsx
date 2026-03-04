@@ -34,14 +34,12 @@ const Navbar = () => {
           : 'bg-transparent py-5'
           }`}
       >
-        <div className="w-full px-6 lg:px-12 flex items-center justify-between">
+        <div className="w-full px-6 lg:px-10 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-orange flex items-center justify-center">
-              <span className="text-white font-heading font-bold text-xl">Z</span>
-            </div>
-            <span className="font-heading font-bold text-xl text-white">
-              Zest Activation<span className="text-orange"></span>
+          <Link to="/" className="flex items-center gap-2 border-2 border-[#FF6A00] rounded-md px-3 py-1.5">
+            <img src="/images/logoZest.png" alt="Zest Activation" className="h-8 w-auto object-contain" />
+            <span className="text-xl font-bold tracking-wide" style={{ color: '#FF6A00' }}>
+              Zest Activation
             </span>
           </Link>
 
@@ -64,13 +62,13 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917841963153"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/80 hover:text-orange transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="text-sm">+91 98765 43210</span>
+              <span className="text-sm">+91 78419 63153</span>
             </a>
             <Link to="/signup">
               <Button

@@ -86,7 +86,7 @@ const ContactPage = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-heading font-bold text-xl mb-2">Corporate Headquarters</h4>
-                                    <p className="text-white/60 leading-relaxed">Level 15, One BKC, Bandra Kurla Complex,<br />Mumbai, Maharashtra 400051</p>
+                                    <p className="text-white/60 leading-relaxed">1st Floor Mohota Complex, Above State Bank Of India,<br />Katol Road, Chhaoni Rd, Nagpur, Maharashtra 440013</p>
                                 </div>
                             </div>
 
@@ -96,7 +96,7 @@ const ContactPage = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-heading font-bold text-xl mb-2">Direct Lines</h4>
-                                    <p className="text-white/60 leading-relaxed">General: +91 22 4567 8900<br />Events: +91 98765 43210</p>
+                                    <p className="text-white/60 leading-relaxed">+91 78419 63153<br />+91 87883 67629</p>
                                 </div>
                             </div>
 
@@ -106,7 +106,7 @@ const ContactPage = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-heading font-bold text-xl mb-2">Email Desk</h4>
-                                    <p className="text-white/60 leading-relaxed">RFP & Proposals: hello@zestactivation.com<br />Careers: jobs@zestactivation.com</p>
+                                    <p className="text-white/60 leading-relaxed">General: info@zestacctivation.in<br />Support: support@zestactivation.in</p>
                                 </div>
                             </div>
 
@@ -124,7 +124,7 @@ const ContactPage = () => {
                         {/* Direct WhatsApp Button */}
                         <div className="pt-8">
                             <a
-                                href="https://wa.me/919876543210"
+                                href="https://wa.me/917841963153"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-[#25D366]/20 hover:scale-105"
@@ -188,7 +188,7 @@ const ContactPage = () => {
             {/* Embedded Google Map */}
             <section className="h-[400px] lg:h-[600px] bg-navy-800 border-t border-white/5 relative grayscale hover:grayscale-0 transition-all duration-700">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15082.784558509745!2d72.8596634!3d19.0661668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8df0b213dd3%3A0x67db8a0b12bc15d8!2sBandra%20Kurla%20Complex%2C%20Bandra%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.123456!2d79.0882!3d21.1458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sKatol%20Road%2C%20Nagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
