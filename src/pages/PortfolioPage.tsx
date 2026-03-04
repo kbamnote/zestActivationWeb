@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowUpRight, Quote } from 'lucide-react';
+import { Quote } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
 import CTASection from '../sections/CTASection';
@@ -144,8 +144,8 @@ const PortfolioPage = () => {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 ${activeCategory === category
-                                    ? 'bg-orange text-white shadow-lg shadow-orange/20'
-                                    : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white border border-white/10'
+                                ? 'bg-orange text-white shadow-lg shadow-orange/20'
+                                : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white border border-white/10'
                                 }`}
                         >
                             {category}

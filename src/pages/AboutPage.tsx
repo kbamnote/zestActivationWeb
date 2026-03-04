@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Users, Target, Lightbulb, Shield, Briefcase, Award } from 'lucide-react';
+import { Target, Lightbulb, Shield, Briefcase, Award } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
 import CTASection from '../sections/CTASection';

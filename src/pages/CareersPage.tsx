@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Briefcase, MapPin, Clock, ArrowRight, HeartPulse, GraduationCap, Plane, Coffee, ChevronDown } from 'lucide-react';
+import { Briefcase, MapPin, Clock, ArrowRight, HeartPulse, GraduationCap, Plane, Coffee } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
 

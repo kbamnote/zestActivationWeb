@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Calendar, User, Clock, ArrowRight, Share2, Twitter, Linkedin, Facebook, MessageSquare, ChevronLeft } from 'lucide-react';
+import { Calendar, User, Clock, ArrowRight, Twitter, Linkedin, Facebook, MessageSquare, ChevronLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
 import CTASection from '../sections/CTASection';
@@ -82,7 +82,7 @@ const BlogPage = () => {
 
             // Blog Cards Animation
             if (!selectedPost) {
-                gsap.utils.toArray('.blog-card').forEach((card: any, i) => {
+                gsap.utils.toArray('.blog-card').forEach((card: any) => {
                     gsap.fromTo(card,
                         { y: 50, opacity: 0 },
                         {
