@@ -68,68 +68,107 @@ const ContactPage = () => {
 
             {/* Main Content */}
             <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
-                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 lg:items-start">
 
                     {/* Contact Info */}
-                    <div ref={infoRef} className="space-y-12">
+                    <div ref={infoRef} className="space-y-8">
                         <div>
-                            <h2 className="text-4xl font-heading font-bold mb-8">Contact Information</h2>
-                            <p className="text-white/70 text-lg leading-relaxed mb-12">
-                                Whether you need a massive product launch or a highly confidential leadership summit, we are ready to assist you anywhere in India.
+                            <h2 className="text-4xl font-heading font-bold mb-4">Contact Information</h2>
+                            <p className="text-white/70 text-base leading-relaxed">
+                                Ready to plan your next major corporate milestone? Our team of experiential experts is here to turn your vision into reality.
                             </p>
                         </div>
-
-                        <div className="space-y-8">
-                            <div className="info-item flex gap-6 group">
-                                <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
-                                    <MapPin className="w-6 h-6 text-orange" />
+                        
+                        <div className="space-y-6">
+                            <h3 className="text-xl font-heading font-bold text-orange">Our Offices</h3>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                {/* Main Office - Nagpur */}
+                                <div className="info-item flex gap-4 group">
+                                    <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                        <MapPin className="w-5 h-5 text-orange" />
+                                    </div>
+                                    <div className="min-w-0">
+                                        <h4 className="font-heading font-bold text-sm mb-1">Main Office</h4>
+                                        <p className="text-white/60 text-xs leading-relaxed">1st Floor Mohota Complex<br />Above State Bank Of India<br />Katol Road, Chhaoni Rd<br />Nagpur, Maharashtra 440013</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="font-heading font-bold text-xl mb-2">Corporate Headquarters</h4>
-                                    <p className="text-white/60 leading-relaxed">1st Floor Mohota Complex, Above State Bank Of India,<br />Katol Road, Chhaoni Rd, Nagpur, Maharashtra 440013</p>
+                            
+                                {/* Head Office - Nagpur */}
+                                <div className="info-item flex gap-4 group">
+                                    <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                        <MapPin className="w-5 h-5 text-orange" />
+                                    </div>
+                                    <div className="min-w-0">
+                                        <h4 className="font-heading font-bold text-sm mb-1">Head Office</h4>
+                                        <p className="text-white/60 text-xs leading-relaxed">5th Floor Mohota Complex<br />Behind State Bank Of<br />Katol Road, Chhaoni Rd<br />Nagpur, Maharashtra 440013</p>
+                                    </div>
+                                </div>
+                            
+                                {/* Mumbai Office */}
+                                <div className="info-item flex gap-4 group">
+                                    <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                        <MapPin className="w-5 h-5 text-orange" />
+                                    </div>
+                                    <div className="min-w-0">
+                                        <h4 className="font-heading font-bold text-sm mb-1">Mumbai Office</h4>
+                                        <p className="text-white/60 text-xs leading-relaxed">Aphrodite, Lodha paradise<br />Majiwada, Thane west</p>
+                                    </div>
+                                </div>
+                            
+                                {/* Raipur Office */}
+                                <div className="info-item flex gap-4 group">
+                                    <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                        <MapPin className="w-5 h-5 text-orange" />
+                                    </div>
+                                    <div className="min-w-0">
+                                        <h4 className="font-heading font-bold text-sm mb-1">Raipur Office</h4>
+                                        <p className="text-white/60 text-xs leading-relaxed">Modern english school<br />Koma khan house</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="space-y-4">
+                            <div className="info-item flex gap-4 group">
+                                <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                    <Phone className="w-5 h-5 text-orange" />
+                                </div>
+                                <div className="min-w-0">
+                                    <h4 className="font-heading font-bold text-sm mb-1">Direct Lines</h4>
+                                    <p className="text-white/60 text-xs leading-relaxed">+91 78419 63153 <br />+91 87883 67629</p>
                                 </div>
                             </div>
 
-                            <div className="info-item flex gap-6 group">
-                                <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
-                                    <Phone className="w-6 h-6 text-orange" />
+                            <div className="info-item flex gap-4 group">
+                                <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                    <Mail className="w-5 h-5 text-orange" />
                                 </div>
-                                <div>
-                                    <h4 className="font-heading font-bold text-xl mb-2">Direct Lines</h4>
-                                    <p className="text-white/60 leading-relaxed">+91 78419 63153<br />+91 87883 67629</p>
-                                </div>
-                            </div>
-
-                            <div className="info-item flex gap-6 group">
-                                <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
-                                    <Mail className="w-6 h-6 text-orange" />
-                                </div>
-                                <div>
-                                    <h4 className="font-heading font-bold text-xl mb-2">Email Desk</h4>
-                                    <p className="text-white/60 leading-relaxed">General: info@zestacctivation.in<br />Support: support@zestactivation.in</p>
+                                <div className="min-w-0">
+                                    <h4 className="font-heading font-bold text-sm mb-1">Email</h4>
+                                    <p className="text-white/60 text-xs">info@eliteassociate.in</p>
                                 </div>
                             </div>
 
-                            <div className="info-item flex gap-6 group">
-                                <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
-                                    <Clock className="w-6 h-6 text-orange" />
+                            <div className="info-item flex gap-4 group">
+                                <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0 border border-white/10 group-hover:border-orange transition-colors">
+                                    <Clock className="w-5 h-5 text-orange" />
                                 </div>
-                                <div>
-                                    <h4 className="font-heading font-bold text-xl mb-2">Operating Hours</h4>
-                                    <p className="text-white/60 leading-relaxed">Monday - Friday: 9:00 AM - 7:00 PM<br />Saturday: 10:00 AM - 2:00 PM</p>
+                                <div className="min-w-0">
+                                    <h4 className="font-heading font-bold text-sm mb-1">Hours</h4>
+                                    <p className="text-white/60 text-xs leading-relaxed">Mon-sat: 10:00 AM - 6:00 PM</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Direct WhatsApp Button */}
-                        <div className="pt-8">
+                        <div className="pt-4">
                             <a
-                                href="https://wa.me/917841963153"
+                                href="https://wa.me/917772088887"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-[#25D366]/20 hover:scale-105"
+                                className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg shadow-[#25D366]/20 hover:scale-105 text-sm"
                             >
-                                <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
+                                <MessageCircle className="w-4 h-4" /> Chat on WhatsApp
                             </a>
                         </div>
                     </div>

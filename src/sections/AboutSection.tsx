@@ -125,10 +125,10 @@ const AboutSection = () => {
   }, []);
 
   const stats = [
-    { end: 250, suffix: '+', label: 'Corporate Events' },
-    { end: 100, suffix: '+', label: 'Brand Activations' },
-    { end: 50, suffix: '+', label: 'Corporate Clients' },
-    { end: 10, suffix: '+', label: 'Cities Across India' },
+    { end: 15, suffix: '+', label: 'Years of Experience' },
+    { end: 8, suffix: '', label: 'Offices Across India' },
+    { end: 100, suffix: '+', label: 'Employees' },
+    { end: 100, suffix: '+', label: 'Crore Billing' },
   ];
 
   return (
@@ -153,7 +153,7 @@ const AboutSection = () => {
             
             {/* Floating badge */}
             <div className="absolute bottom-6 left-6 bg-orange/90 backdrop-blur-sm rounded-xl px-6 py-4">
-              <div className="font-heading font-bold text-white text-2xl">10+</div>
+              <div className="font-heading font-bold text-white text-2xl">15+</div>
               <div className="text-white/80 text-sm">Years of Excellence</div>
             </div>
           </div>
@@ -165,20 +165,21 @@ const AboutSection = () => {
             </span>
             
             <h2 className="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight">
-              India's Premier Corporate Event Management Partner
+              India's Premier Event Management Partner
             </h2>
             
             <p className="text-white/70 text-base lg:text-lg leading-relaxed">
-              At Zest Activation, we transform corporate visions into extraordinary experiences. 
-              With over a decade of expertise, we've partnered with India's leading brands to 
-              deliver events that captivate, engage, and inspire.
+              Zest Activation is the largest and most reputable event management company in India, 
+              known for our professionalism and exceptional service. With over 15 years of experience, 
+              we have established ourselves as a premier event management company specializing in 
+              Above The Line (ATL) and Below The Line (BTL) activities.
             </p>
             
             <p className="text-white/70 text-base lg:text-lg leading-relaxed">
-              From intimate board meetings to grand product launches, our team brings 
-              creativity, precision, and passion to every project. We understand the 
-              pulse of Indian corporate culture and blend it with global standards 
-              of excellence.
+              Our team of talented professionals caters to all aspects of event requirements, from 
+              exhibition planning to seamless execution. We pride ourselves on creativity and innovation, 
+              transforming ideas into unforgettable experiences across sports events, concerts, 
+              government events, medical conferences, corporate exhibitions, and promotional campaigns.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -188,7 +189,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <div className="text-white font-semibold">End-to-End Service</div>
-                  <div className="text-white/60 text-sm">From concept to execution</div>
+                  <div className="text-white/60 text-sm">Concept to execution</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -197,7 +198,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <div className="text-white font-semibold">PAN India Presence</div>
-                  <div className="text-white/60 text-sm">Major cities covered</div>
+                  <div className="text-white/60 text-sm">8 offices nationwide</div>
                 </div>
               </div>
             </div>

@@ -116,38 +116,48 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Users className="w-7 h-7" />,
-      title: 'Corporate Conferences',
-      description: 'Seamlessly executed conferences that foster knowledge sharing, networking, and brand positioning for your organization.'
+      title: 'Event Planning',
+      description: 'End-to-end event planning and execution for corporate conferences, product launches, and award ceremonies.'
     },
     {
       icon: <Rocket className="w-7 h-7" />,
-      title: 'Product Launch Events',
-      description: 'Create buzz and excitement around your new products with impactful launch events that leave lasting impressions.'
+      title: 'Sports Management',
+      description: 'Comprehensive sports event management including marathons, walkathons, IPL meets, and Commonwealth Games events.'
     },
     {
       icon: <Award className="w-7 h-7" />,
-      title: 'Annual Day & Award Nights',
-      description: 'Celebrate achievements and milestones with elegantly orchestrated award ceremonies that honor excellence.'
+      title: 'Stall Designing',
+      description: 'Creative exhibition stall design, fabrication, and setup for trade shows and expos across India.'
     },
     {
       icon: <Puzzle className="w-7 h-7" />,
-      title: 'Team Building Activities',
-      description: 'Strengthen team bonds through engaging, thoughtfully designed activities that boost morale and collaboration.'
+      title: 'Rural Marketing',
+      description: 'Strategic rural marketing campaigns and on-ground activations to connect with tier-3 markets effectively.'
     },
     {
       icon: <Megaphone className="w-7 h-7" />,
-      title: 'Brand Activation Campaigns',
-      description: 'Bring your brand to life with immersive experiences that connect with your audience on a deeper level.'
-    },
-    {
-      icon: <Store className="w-7 h-7" />,
-      title: 'Exhibition & Trade Shows',
-      description: 'Stand out at industry events with captivating booth designs and flawless execution that drives engagement.'
+      title: 'Content Solutions',
+      description: 'Creative content development for events including scripting, storytelling, and brand narrative creation.'
     },
     {
       icon: <Monitor className="w-7 h-7" />,
-      title: 'Virtual & Hybrid Events',
-      description: 'Extend your reach with professionally produced virtual and hybrid events that deliver seamless experiences.'
+      title: 'Innovation & Technology',
+      description: 'Cutting-edge technology integration for immersive event experiences and digital engagement solutions.'
+    },
+    {
+      icon: <Store className="w-7 h-7" />,
+      title: 'Digital Marketing',
+      description: 'Strategic digital marketing campaigns to amplify event reach and drive audience engagement.'
+    },
+    {
+      icon: <Users className="w-7 h-7" />,
+      title: 'Brand Activations',
+      description: 'Impactful brand activation campaigns that create meaningful connections between brands and consumers.'
+    },
+    {
+      icon: <Rocket className="w-7 h-7" />,
+      title: 'Outdoor Solutions',
+      description: 'OOH advertising and outdoor event solutions with strategic placement and creative execution.'
     }
   ];
 
@@ -164,10 +174,10 @@ const ServicesSection = () => {
             What We Do
           </span>
           <h2 className="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl mb-6">
-            Strategy to Screen—Built for Live Impact
+            Comprehensive Event Solutions
           </h2>
           <p className="text-white/60 text-base lg:text-lg">
-            Comprehensive event solutions tailored to your brand's unique needs and objectives.
+            From concept to execution—we deliver creativity, innovation, and flawless results.
           </p>
         </div>
 

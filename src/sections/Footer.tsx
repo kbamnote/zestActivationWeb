@@ -22,10 +22,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'Corporate Conferences', href: '#services' },
-    { name: 'Product Launches', href: '#services' },
-    { name: 'Award Nights', href: '#services' },
-    { name: 'Team Building', href: '#services' },
+    { name: 'Event Planning', href: '#services' },
+    { name: 'Sports Management', href: '#services' },
+    { name: 'Stall Designing', href: '#services' },
+    { name: 'Rural Marketing', href: '#services' },
     { name: 'Brand Activations', href: '#services' },
   ];
 
@@ -47,23 +47,23 @@ const Footer = () => {
               <img src="/images/logoZest.png" alt="Zest Activation" className="h-10 w-auto object-contain" />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              India's premier corporate event management partner.
-              Creating experiences that inspire since 2014.
+              India's largest and most reputable event management company.
+              Over 15 years of excellence in creating unforgettable experiences.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <a href="tel:+917841963153" className="flex items-center gap-3 text-white/60 hover:text-orange transition-colors text-sm">
                 <Phone className="w-4 h-4" />
-                +91 78419 63153 / 87883 67629
+                +91 7841963153
               </a>
-              <a href="mailto:info@zestacctivation.in" className="flex items-center gap-3 text-white/60 hover:text-orange transition-colors text-sm">
+              <a href="mailto:info@eliteassociate.com" className="flex items-center gap-3 text-white/60 hover:text-orange transition-colors text-sm">
                 <Mail className="w-4 h-4" />
-                info@zestacctivation.in
+                info@eliteassociate.in
               </a>
               <div className="flex items-center gap-3 text-white/60 text-sm">
                 <MapPin className="w-4 h-4" />
-                Nagpur, Maharashtra, India
+                Raipur, Chhattisgarh, India
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/917841963153"
+        href="https://wa.me/917772088887"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center

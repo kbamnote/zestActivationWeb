@@ -10,44 +10,76 @@ gsap.registerPlugin(ScrollTrigger);
 
 const servicesData = [
     {
-        id: 'conferences',
-        title: 'Corporate Conferences',
-        icon: Building2,
-        image: '/images/indian_corporate_stage_setup.png',
-        desc: 'End-to-end management of large-scale corporate conferences, summits, and dealer meets across major Indian cities.',
-        features: ['Venue Sourcing & Branding', 'AV & Stage Production', 'Guest Accommodation', 'Digital Registration Desks']
-    },
-    {
-        id: 'launches',
-        title: 'Product Launches',
-        icon: Zap,
-        image: '/images/portfolio_launch.jpg',
-        desc: 'High-impact product unveilings designed to grab media attention and create lasting impressions on dealers and customers.',
-        features: ['3D Projection Mapping', 'Interactive Reveal Mechanics', 'Media & PR Management', 'Influencer Engagement']
-    },
-    {
-        id: 'awards',
-        title: 'Award Nights & Annual Days',
-        icon: Award,
-        image: '/images/indian_award_night.png',
-        desc: 'Glamorous and prestigious award ceremonies celebrating corporate milestones and employee excellence.',
-        features: ['Red Carpet Experiences', 'VIP Protocol Management', 'Thematic Decor', 'Entertainment & Artists']
-    },
-    {
-        id: 'brand-activation',
-        title: 'Brand Activations',
-        icon: Globe,
-        image: '/images/portfolio_activation.jpg',
-        desc: 'Strategic on-ground activations in malls, corporate parks, and high-footfall areas to drive direct consumer engagement.',
-        features: ['Experiential Booths', 'Lead Generation Tech', 'Promoter Management', 'BTL Marketing']
-    },
-    {
-        id: 'team-building',
-        title: 'Team Building & Offsites',
+        id: 'event-planning',
+        title: 'Event Planning',
         icon: Users,
-        image: '/images/about_team.jpg',
-        desc: 'Curated corporate offsites that foster team bonding, leadership skills, and company culture.',
-        features: ['Resort Bookings', 'Gamified Activities', 'Leadership Workshops', 'Gala Dinners']
+        image: '/images/hero_conference_hall.jpg',
+        desc: 'Planning and execution of corporate events, product launches, exhibitions, brand activations, promotional campaigns, and large-scale public events.',
+        features: ['Corporate Events', 'Product Launches', 'Exhibitions', 'Brand Activations', 'Promotional Campaigns', 'Public Events']
+    },
+    {
+        id: 'sports-management',
+        title: 'Sports Management',
+        icon: Zap,
+        image: '/images/mosaic_crowd_wide.jpg',
+        desc: 'Complete sports event management including tournaments, marathons, sports leagues, athlete events, and sports promotions.',
+        features: ['Tournaments', 'Marathons & Walkathons', 'Sports Leagues', 'Athlete Events', 'Sports Promotions', 'IPL Meet & Greet']
+    },
+    {
+        id: 'outdoor-solutions',
+        title: 'Outdoor Solutions',
+        icon: Globe,
+        image: '/images/stage_beams_wide.jpg',
+        desc: 'Outdoor advertising and branding solutions including hoardings, billboards, road shows, outdoor promotions, and campaign visibility setups.',
+        features: ['Hoardings & Billboards', 'Road Shows', 'Outdoor Promotions', 'Campaign Visibility', 'OOH Advertising', 'Street Branding']
+    },
+    {
+        id: 'stall-designing',
+        title: 'Stall Designing',
+        icon: Building2,
+        image: '/images/precision_stage_beams.jpg',
+        desc: 'Creative design and fabrication of exhibition stalls, booths, product display setups, and trade show installations.',
+        features: ['Exhibition Stalls', 'Booth Design', 'Product Displays', 'Trade Show Setups', 'Fabrication', 'Custom Installations']
+    },
+    {
+        id: 'rural-marketing',
+        title: 'Rural Marketing',
+        icon: Award,
+        image: '/images/mosaic_audience_closeup.jpg',
+        desc: 'Rural marketing campaigns and brand outreach programs through activation vans, field promotions, and grassroots marketing initiatives.',
+        features: ['Activation Vans', 'Field Promotions', 'Grassroots Marketing', 'Rural Outreach', 'On-Ground Campaigns', 'Village Melas']
+    },
+    {
+        id: 'content-solutions',
+        title: 'Content Solutions',
+        icon: Users,
+        image: '/images/indian_video_testimonial.png',
+        desc: 'Development of promotional content including marketing creatives, event visuals, video production, branding materials, and campaign storytelling.',
+        features: ['Marketing Creatives', 'Event Visuals', 'Video Production', 'Branding Materials', 'Campaign Storytelling', 'Content Strategy']
+    },
+    {
+        id: 'innovation-technology',
+        title: 'Innovation Technology',
+        icon: Zap,
+        image: '/images/indian_corporate_stage_setup.png',
+        desc: 'Integration of modern event technology such as LED walls, interactive displays, digital installations, projection mapping, and immersive experiences.',
+        features: ['LED Walls', 'Interactive Displays', 'Digital Installations', 'Projection Mapping', 'Immersive Experiences', 'AR/VR Integration']
+    },
+    {
+        id: 'digital-marketing',
+        title: 'Digital Marketing',
+        icon: Globe,
+        image: '/images/indian_blog_tech.png',
+        desc: 'Online marketing strategies including social media campaigns, digital advertising, influencer promotions, and brand engagement across digital platforms.',
+        features: ['Social Media Campaigns', 'Digital Advertising', 'Influencer Promotions', 'Brand Engagement', 'Content Marketing', 'SEO/SEM']
+    },
+    {
+        id: 'brand-activations',
+        title: 'Brand Activations',
+        icon: Users,
+        image: '/images/portfolio_activation.jpg',
+        desc: 'On-ground brand activation campaigns designed to engage audiences, increase brand awareness, and create memorable customer experiences.',
+        features: ['On-Ground Activations', 'Audience Engagement', 'Brand Awareness', 'Customer Experiences', 'Mall Activations', 'Corporate Park Events']
     }
 ];
 
@@ -148,8 +180,9 @@ const ServicesPage = () => {
             <section id="all-services" ref={servicesRef} className="py-24 bg-navy-900">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12">
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-4">Our Expertise</h2>
-                        <p className="text-xl text-white/60">Tailored solutions for your corporate communication needs.</p>
+                        <span className="font-accent text-orange tracking-widest uppercase text-sm mb-4 block">What We Offer</span>
+                        <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-4">OUR SERVICES</h2>
+                        <p className="text-xl text-white/60">Comprehensive event solutions tailored to your brand's unique needs.</p>
                     </div>
 
                     <div className="space-y-32">
@@ -189,6 +222,18 @@ const ServicesPage = () => {
                                 </div>
                             );
                         })}
+                    </div>
+
+                    {/* Website Link */}
+                    <div className="text-center mt-20 pt-12 border-t border-white/10">
+                        <a 
+                            href="http://www.maverickactivations.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-block text-orange hover:text-orange-light text-lg font-semibold transition-colors"
+                        >
+                            www.maverickactivations.com
+                        </a>
                     </div>
                 </div>
             </section>

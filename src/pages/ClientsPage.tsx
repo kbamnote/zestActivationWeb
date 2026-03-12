@@ -1,31 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Play, Star, TrendingUp, Users, Globe2, Award } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../sections/Footer';
 import CTASection from '../sections/CTASection';
+import { clients } from '../data/clients';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const industries = [
-    {
-        name: "Technology & IT",
-        clients: ["Infosys", "Wipro", "TCS", "Tech Mahindra", "HCL", "Cognizant"]
-    },
-    {
-        name: "Banking & Finance",
-        clients: ["HDFC Bank", "ICICI Bank", "Axis Bank", "Kotak Mahindra", "SBI", "Bajaj Finserv"]
-    },
-    {
-        name: "Automotive",
-        clients: ["Maruti Suzuki", "Tata Motors", "Mahindra", "Hyundai India", "Hero MotoCorp", "TVS"]
-    },
-    {
-        name: "FMCG & Retail",
-        clients: ["ITC", "HUL", "Nestle India", "Britannia", "Dabur", "Godrej"]
-    }
-];
 
 const testimonials = [
     {
@@ -49,7 +31,6 @@ const testimonials = [
 ];
 
 const ClientsPage = () => {
-    const [activeIndustry, setActiveIndustry] = useState(0);
     const headerRef = useRef<HTMLDivElement>(null);
     const statsRef = useRef<HTMLDivElement>(null);
     const countersRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -87,7 +68,8 @@ const ClientsPage = () => {
             }
 
             // Fade up elements
-            gsap.utils.toArray('.fade-up').forEach((el: any) => {
+            const fadeUpElements = gsap.utils.toArray<HTMLElement>('.fade-up');
+            fadeUpElements.forEach((el) => {
                 gsap.fromTo(el,
                     { y: 40, opacity: 0 },
                     {
@@ -150,43 +132,44 @@ const ClientsPage = () => {
             {/* Industries & Logo Grid */}
             <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="text-center mb-16 fade-up">
-                    <h2 className="text-4xl font-heading font-bold mb-4">Industries We Serve</h2>
-                    <p className="text-white/60 text-lg">Deep domain expertise across diverse corporate sectors.</p>
+                    <h2 className="text-4xl font-heading font-bold mb-4">Our Valued Clients</h2>
+                    <p className="text-white/60 text-lg">Trusted by leading organizations across government, corporate, and public sectors.</p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-12 fade-up">
-                    {/* Industry Sidebar */}
-                    <div className="w-full lg:w-1/4 space-y-2">
-                        {industries.map((ind, i) => (
-                            <button
-                                key={i}
-                                onClick={() => setActiveIndustry(i)}
-                                className={`w-full text-left px-6 py-4 rounded-xl font-heading font-bold text-lg transition-all ${activeIndustry === i
-                                        ? 'bg-orange text-white shadow-lg shadow-orange/20'
-                                        : 'bg-transparent text-white/50 hover:bg-white/5 hover:text-white'
-                                    }`}
-                            >
-                                {ind.name}
-                            </button>
-                        ))}
-                    </div>
-
-                    {/* Logo Grid */}
-                    <div className="w-full lg:w-3/4">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            {industries[activeIndustry].clients.map((client, i) => (
-                                <div
-                                    key={i}
-                                    className="aspect-[3/2] bg-white/5 border border-white/10 rounded-xl flex items-center justify-center p-6 hover:bg-white/10 transition-colors group"
+                {/* Client Logo Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 fade-up">
+                    {clients.map((client, i) => (
+                        <div
+                            key={i}
+                            className="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-orange/50 transition-all group flex flex-col items-center justify-center gap-4 min-h-[160px]"
+                        >
+                            <div className="w-full h-20 flex items-center justify-center">
+                                {client.logoPath ? (
+                                    <img
+                                        src={client.logoPath}
+                                        alt={`${client.name} logo`}
+                                        className="max-w-full max-h-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                                        onError={(e) => {
+                                            // Fallback to text if image fails to load
+                                            const target = e.target as HTMLImageElement;
+                                            target.style.display = 'none';
+                                            const fallback = target.nextElementSibling as HTMLElement;
+                                            if (fallback) fallback.style.display = 'block';
+                                        }}
+                                    />
+                                ) : null}
+                                <span 
+                                    className="font-heading font-bold text-lg text-white/40 group-hover:text-white/80 transition-colors text-center"
+                                    style={{ display: client.logoPath ? 'none' : 'block' }}
                                 >
-                                    {/* Placeholder for actual logos - using text for now */}
-                                    <span className="font-heading font-bold text-2xl text-white/40 group-hover:text-white/80 transition-colors tracking-wide">
-                                        {client}
-                                    </span>
-                                </div>
-                            ))}
+                                    {client.name}
+                                </span>
+                            </div>
+                            <span className="text-xs text-white/50 uppercase tracking-widest font-accent text-center">
+                                {client.name}
+                            </span>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </section>
 

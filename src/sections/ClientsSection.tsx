@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Building2, Cpu, Factory, Landmark, Rocket, ShoppingBag, Smartphone, Truck } from 'lucide-react';
+import { Building2, Cpu, Factory, Landmark, Rocket, ShoppingBag, Smartphone, Truck, Users } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,14 +11,43 @@ const ClientsSection = () => {
   const gridRef = useRef<HTMLDivElement>(null);
 
   const clients = [
-    { name: 'TechVenture', icon: <Cpu className="w-8 h-8" />, category: 'Technology' },
-    { name: 'Global Finance', icon: <Landmark className="w-8 h-8" />, category: 'Banking' },
-    { name: 'IndiMart', icon: <ShoppingBag className="w-8 h-8" />, category: 'Retail' },
-    { name: 'AutoTech India', icon: <Truck className="w-8 h-8" />, category: 'Automotive' },
-    { name: 'StartUp Hub', icon: <Rocket className="w-8 h-8" />, category: 'Startup' },
-    { name: 'SteelWorks', icon: <Factory className="w-8 h-8" />, category: 'Manufacturing' },
-    { name: 'MobileFirst', icon: <Smartphone className="w-8 h-8" />, category: 'Telecom' },
-    { name: 'BuildCorp', icon: <Building2 className="w-8 h-8" />, category: 'Real Estate' },
+    { name: 'Government of Chhattisgarh', icon: <Building2 className="w-8 h-8" />, category: 'Government' },
+    { name: 'Chhattisgarh Tourism', icon: <Building2 className="w-8 h-8" />, category: 'Government' },
+    { name: 'Dainik Bhaskar', icon: <Users className="w-8 h-8" />, category: 'Media' },
+    { name: 'Navbharat', icon: <Users className="w-8 h-8" />, category: 'Media' },
+    { name: 'Patrika', icon: <Users className="w-8 h-8" />, category: 'Media' },
+    { name: 'Sakshi', icon: <Users className="w-8 h-8" />, category: 'Media' },
+    { name: 'Jagran', icon: <Users className="w-8 h-8" />, category: 'Media' },
+    { name: 'Hero', icon: <Truck className="w-8 h-8" />, category: 'Automotive' },
+    { name: 'Hero FinCorp', icon: <Landmark className="w-8 h-8" />, category: 'Finance' },
+    { name: 'TVS', icon: <Truck className="w-8 h-8" />, category: 'Automotive' },
+    { name: 'Suzuki', icon: <Truck className="w-8 h-8" />, category: 'Automotive' },
+    { name: 'Tata Motors', icon: <Truck className="w-8 h-8" />, category: 'Automotive' },
+    { name: 'Indian Oil', icon: <Factory className="w-8 h-8" />, category: 'Energy' },
+    { name: 'Big Bazaar', icon: <ShoppingBag className="w-8 h-8" />, category: 'Retail' },
+    { name: 'Central', icon: <ShoppingBag className="w-8 h-8" />, category: 'Retail' },
+    { name: 'LG', icon: <Smartphone className="w-8 h-8" />, category: 'Electronics' },
+    { name: 'Nokia', icon: <Smartphone className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'Samsung', icon: <Smartphone className="w-8 h-8" />, category: 'Electronics' },
+    { name: 'Vivo', icon: <Smartphone className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'Oppo', icon: <Smartphone className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'Vodafone', icon: <Cpu className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'Idea', icon: <Cpu className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'Reliance Jio', icon: <Cpu className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'Videocon d2h', icon: <Cpu className="w-8 h-8" />, category: 'Telecom' },
+    { name: 'HDFC Bank', icon: <Landmark className="w-8 h-8" />, category: 'Banking' },
+    { name: 'Punjab National Bank', icon: <Landmark className="w-8 h-8" />, category: 'Banking' },
+    { name: 'SBI', icon: <Landmark className="w-8 h-8" />, category: 'Banking' },
+    { name: 'Lakme Salon', icon: <ShoppingBag className="w-8 h-8" />, category: 'Beauty & Wellness' },
+    { name: 'Apollo', icon: <Building2 className="w-8 h-8" />, category: 'Healthcare' },
+    { name: 'Ramkrishna Care Hospitals', icon: <Building2 className="w-8 h-8" />, category: 'Healthcare' },
+    { name: 'NH Hospitals', icon: <Building2 className="w-8 h-8" />, category: 'Healthcare' },
+    { name: 'BYJU\'S', icon: <Users className="w-8 h-8" />, category: 'Education' },
+    { name: 'Gati', icon: <Truck className="w-8 h-8" />, category: 'Logistics' },
+    { name: 'T-Hub', icon: <Rocket className="w-8 h-8" />, category: 'Technology' },
+    { name: 'Audi', icon: <Truck className="w-8 h-8" />, category: 'Automotive' },
+    { name: 'Ultratech Cement', icon: <Factory className="w-8 h-8" />, category: 'Manufacturing' },
+    { name: 'SK Finance', icon: <Landmark className="w-8 h-8" />, category: 'Finance' }
   ];
 
   useEffect(() => {
@@ -78,10 +107,10 @@ const ClientsSection = () => {
             Trusted By
           </span>
           <h2 className="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl mb-6">
-            Teams That Move Fast
+            Our Valued Clients
           </h2>
           <p className="text-white/60 text-base lg:text-lg">
-            Enterprise, startups, and institutions—across India and APAC
+            Trusted by leading organizations across government, corporate, and public sectors.
           </p>
         </div>
 
@@ -136,7 +165,7 @@ const ClientsSection = () => {
               <div className="text-white/60 text-sm">Corporate Clients</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-3xl lg:text-4xl text-orange mb-2">10+</div>
+              <div className="font-heading font-bold text-3xl lg:text-4xl text-orange mb-2">15+</div>
               <div className="text-white/60 text-sm">Years Experience</div>
             </div>
           </div>

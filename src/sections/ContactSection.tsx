@@ -68,8 +68,8 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: 'Email',
-      value: 'info@zestacctivation.in',
-      href: 'mailto:info@zestacctivation.in'
+      value: 'info@eliteassociate.in',
+      href: 'mailto:info@eliteassociate.in'
     },
     {
       icon: <Phone className="w-5 h-5" />,
@@ -80,13 +80,13 @@ const ContactSection = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: 'Locations',
-      value: 'Nagpur, Maharashtra, India',
+      value: 'Address: 501, 5th Floor Mohota Apartment Behind State Bank Of India Katol Road, Chhaoni Rd, Nagpur, Maharashtra 440013',
       href: '#'
     },
     {
       icon: <Clock className="w-5 h-5" />,
       label: 'Working Hours',
-      value: 'Mon - Sat: 9:00 AM - 7:00 PM',
+      value: 'Mon - Sat: 10:00 AM - 6:00 PM',
       href: '#'
     }
   ];
@@ -126,9 +126,9 @@ const ContactSection = () => {
                                 group-hover:bg-orange/20 transition-colors">
                     <div className="text-orange">{item.icon}</div>
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <div className="text-white/50 text-sm mb-1">{item.label}</div>
-                    <div className="text-white group-hover:text-orange transition-colors">
+                    <div className="text-white group-hover:text-orange transition-colors break-words">
                       {item.value}
                     </div>
                   </div>

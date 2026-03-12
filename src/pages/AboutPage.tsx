@@ -43,8 +43,8 @@ const AboutPage = () => {
             });
 
             // Timeline Animation
-            const timelineItems = gsap.utils.toArray('.timeline-item');
-            timelineItems.forEach((item: any) => {
+            const timelineItems = gsap.utils.toArray<HTMLElement>('.timeline-item');
+            timelineItems.forEach((item) => {
                 gsap.fromTo(item,
                     { x: -50, opacity: 0 },
                     {
@@ -65,11 +65,11 @@ const AboutPage = () => {
     }, []);
 
     const timelineData = [
-        { year: '2014', title: 'The Genesis', desc: 'Founded in Mumbai with a vision to redefine corporate events.' },
-        { year: '2017', title: 'Pan-India Expansion', desc: 'Opened offices in Delhi, Bangalore, and Pune.' },
-        { year: '2019', title: '100th Enterprise Client', desc: 'Successfully onboarded our 100th major corporate partner.' },
-        { year: '2022', title: 'Award Winning Agency', desc: 'Recognized as the best B2B event agency in India.' },
-        { year: '2026', title: 'Global Ambitions', desc: 'Pioneering next-gen corporate activations worldwide.' },
+        { year: '2009', title: 'The Foundation', desc: 'Founded with a vision to redefine event management in India.' },
+        { year: '2015', title: 'Expansion Phase', desc: 'Opened multiple offices across Maharashtra, MP, and Chhattisgarh.' },
+        { year: '2018', title: '100+ Employees', desc: 'Grew into a 100+ strong team of event professionals.' },
+        { year: '2022', title: '₹100+ Crore Milestone', desc: 'Achieved billing strength of over ₹100 Crore across events and OOH.' },
+        { year: '2026', title: 'Industry Leadership', desc: 'Recognized as India\'s largest and most reputable event management company.' },
     ];
 
     const leadershipTeam = [
@@ -91,7 +91,15 @@ const AboutPage = () => {
                             We are <span className="text-gradient">Zest.</span>
                         </h1>
                         <p className="text-lg lg:text-xl text-white/80 max-w-2xl leading-relaxed mb-8">
-                            India's premier corporate event management agency. We combine strategic thinking with flawless execution to deliver experiences that elevate brands.
+                            Zest Activation is the largest and most reputable event management company in India, 
+                            known for our professionalism and exceptional service. With over 15 years of experience, 
+                            we have established ourselves as a premier event management company.
+                        </p>
+                        <p className="text-lg lg:text-xl text-white/80 max-w-2xl leading-relaxed mb-8">
+                            Our team of talented professionals specializes in Above The Line (ATL) and Below The Line (BTL) 
+                            activities, catering to all aspects of event requirements. We pride ourselves on exhibition planning, 
+                            event production, and seamless execution across sports events, concerts, government events, 
+                            medical conferences, corporate exhibitions, and promotional campaigns.
                         </p>
                     </div>
                     <div className="flex-1 w-full relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden group">
@@ -113,14 +121,14 @@ const AboutPage = () => {
                         <Target className="w-12 h-12 text-orange mb-6" />
                         <h3 className="text-3xl font-heading font-bold mb-4">Our Mission</h3>
                         <p className="text-white/70 leading-relaxed text-lg">
-                            To empower Indian and global enterprises by creating impactful, technology-driven, and memorable brand activations that foster genuine human connection and business growth.
+                            Learn from every event we participate in, take ownership of client campaigns, and deliver results that generate repeat business. We aim to achieve top-of-mind recall and become synonymous with customer delight.
                         </p>
                     </div>
                     <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-2xl hover:border-orange/50 transition-colors">
                         <Lightbulb className="w-12 h-12 text-orange mb-6" />
                         <h3 className="text-3xl font-heading font-bold mb-4">Our Vision</h3>
                         <p className="text-white/70 leading-relaxed text-lg">
-                            To be the most trusted and innovative corporate event partner in Asia, setting the benchmark for premium B2B experiences, sustainability, and creative excellence.
+                            With a view to change the dynamics of the industry, we aim to be seen as a solution provider achieving sustainable growth. We nurture a dedicated, creative, and energetic workforce to set benchmarks in the industry globally.
                         </p>
                     </div>
                 </div>
@@ -140,24 +148,28 @@ const AboutPage = () => {
                         <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">Built on Trust. Driven by Excellence.</h2>
                         <div className="space-y-6 text-white/70 text-lg leading-relaxed">
                             <p>
-                                What started in 2014 as a passionate group of four event planners in Mumbai has now grown into a 150+ strong team of creative directors, strategists, and execution specialists across India.
+                                What started in 2009 as a passionate team has now grown into a 100+ strong team across 8 offices 
+                                spanning Maharashtra, Madhya Pradesh, Chhattisgarh, Delhi (NCR), Telangana, Rajasthan, and Gujarat.
                             </p>
                             <p>
-                                We understand the Indian corporate landscape deeply. It's not just about setting up a stage; it's about understanding corporate hierarchies, protocols, cultural nuances, and the underlying business objectives of every gathering.
+                                We understand the Indian market deeply. Our network and presence across major cities including 
+                                Mumbai, Ahmedabad, Hyderabad, Nagpur, Raipur, Indore, Bhopal, and Noida enables us to deliver 
+                                flawless events pan-India.
                             </p>
                             <p>
-                                From coordinating complex multi-city roadshows to executing highly secure, closed-door leadership summits, Zest has become synonymous with reliability and premium quality.
+                                With a billing strength of over ₹100+ Crore (₹65+ Crore in Events & OOH, ₹35+ Crore in Post Production), 
+                                Zest Activation has become synonymous with reliability, creativity, and premium quality execution.
                             </p>
                         </div>
 
                         <div className="grid grid-cols-2 gap-8 mt-12">
                             <div className="border-l-2 border-orange pl-6">
-                                <div className="text-4xl font-heading font-bold text-white mb-2">98%</div>
-                                <div className="text-sm text-white/50 uppercase tracking-widest font-accent">Client Retention</div>
+                                <div className="text-4xl font-heading font-bold text-white mb-2">100+</div>
+                                <div className="text-sm text-white/50 uppercase tracking-widest font-accent">Employees</div>
                             </div>
                             <div className="border-l-2 border-orange pl-6">
-                                <div className="text-4xl font-heading font-bold text-white mb-2">150+</div>
-                                <div className="text-sm text-white/50 uppercase tracking-widest font-accent">In-house Experts</div>
+                                <div className="text-4xl font-heading font-bold text-white mb-2">8</div>
+                                <div className="text-sm text-white/50 uppercase tracking-widest font-accent">Offices Pan India</div>
                             </div>
                         </div>
                     </div>

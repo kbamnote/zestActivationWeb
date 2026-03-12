@@ -146,7 +146,7 @@ const HeroSection = () => {
           className="font-accent text-xs lg:text-sm tracking-[0.18em] text-white/70 uppercase mb-6"
           style={{ willChange: 'transform, opacity' }}
         >
-          Corporate Events & Activations
+          Events | Exhibitions | Sports
         </span>
 
         {/* Headline */}
@@ -228,7 +228,7 @@ const HeroSection = () => {
               <div className="text-[10px] text-orange uppercase tracking-wider font-accent">Cities Pan India</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold font-heading text-white">10Y+</div>
+              <div className="text-2xl font-bold font-heading text-white">15Y+</div>
               <div className="text-[10px] text-orange uppercase tracking-wider font-accent">Industry Experience</div>
             </div>
           </div>
