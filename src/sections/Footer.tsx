@@ -63,7 +63,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-3 text-white/60 text-sm">
                 <MapPin className="w-4 h-4" />
-                Raipur, Chhattisgarh, India
+                Address: 501, 5th Floor Mohota Apartment Behind State Bank Of India Katol Road, Chhaoni Rd, Nagpur, Maharashtra 440013, India<br />
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/917772088887"
+        href="https://wa.me/917841963153"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center

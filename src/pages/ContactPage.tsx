@@ -163,7 +163,7 @@ const ContactPage = () => {
                         {/* Direct WhatsApp Button */}
                         <div className="pt-4">
                             <a
-                                href="https://wa.me/917772088887"
+                                href="https://wa.me/917841963153"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg shadow-[#25D366]/20 hover:scale-105 text-sm"
@@ -227,7 +227,7 @@ const ContactPage = () => {
             {/* Embedded Google Map */}
             <section className="h-[400px] lg:h-[600px] bg-navy-800 border-t border-white/5 relative grayscale hover:grayscale-0 transition-all duration-700">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.123456!2d79.0882!3d21.1458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sKatol%20Road%2C%20Nagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.5819249540546!2d79.0778028!3d21.169029899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1dfdc6c9b43%3A0x54f93538e6888db3!2sElite%20Associate%20in%20Nagpur!5e0!3m2!1sen!2sin!4v1773314682210!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
